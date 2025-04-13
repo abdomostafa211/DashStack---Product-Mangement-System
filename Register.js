@@ -32,7 +32,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
 
     //Add the new user to the array
     users.push(newUser);
-
+ 
     //Save the updated array back to localStorage
     localStorage.setItem("users", JSON.stringify(users));
 

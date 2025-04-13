@@ -50,7 +50,7 @@ submit.onclick = function (){
         price:price.value,
         taxes:taxes.value,
         discount:discount.value,
-        total:total.innerHTML,//from element because it is not ststic 
+        total:total.innerHTML,//from element because it is not static 
         count:+count.value,
         category:category.value,
 
@@ -103,9 +103,9 @@ function clearData(){
 function showData(){
     getTotal();
     let table = '';
-    for (let i = 1 ; i < datapro.length ; i++){
+    for (let i = 0 ; i < datapro.length ; i++){
         table += `<tr>
-          <td>${i}</td>
+          <td>${i + 1}</td>
           <td>${datapro[i].title}</td>
           <td>${datapro[i].price}</td>
           <td>${datapro[i].taxes}</td>
@@ -165,14 +165,14 @@ function updateData(i){
 
 }
 //search
-let searchmode = 'Title';
+let searchmode = 'title';
 function getmode(id){
     let search = document.getElementById('search');
     if(id == 'searchTitle'){
-        searchmode = 'Title';
+        searchmode = 'title';
         
     }else{
-        searchmode = 'Category';
+        searchmode = 'category';
         
     }
     search.placeholder='Search By '+ searchmode;
@@ -232,4 +232,4 @@ document.getElementById("logout").addEventListener("click", function () {
     window.location.href = "login.html";
   });
 
-//clean data 
+

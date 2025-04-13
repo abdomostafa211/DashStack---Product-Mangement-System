@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;         /* خلفية داكنة */
+    color: #e0e0e0;              /* نصوص رمادي فاتح لقراءة سهلة */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+    width: 100%;
+    background-color: #1c1c1c;   /* خلفية داكنة جدًا للهيدر */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #bb86fc; /* لون أرجواني خفيف لخط الهيدر */
+    margin: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bb86fc;               /* أرجواني فاتح لاسم الموقع */
+}
+
+.navbar a {
+    color: #e0e0e0;              /* نصوص فاتحة لتباين جيد مع الخلفية الداكنة */
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #6200ea;              /* أزرق داكن عند التمرير */
+}
+
+.logout {
+    font-weight: bold;
+    color: #ff3b30;              /* أحمر داكن لزر الخروج */
+}
+
+.crud {
+    width: 80%;
+    margin: 30px auto;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid #333;
+    background: #1e1e1e;         /* خلفية داكنة للفورمات */
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;                 /* نصوص فاتحة */
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+input:focus {
+    background: #3c3c3c;         /* خلفية أغمق عند الفوكس */
+    transform: scale(1.05);
+}
+
+.price input {
+    width: 28%;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+#total {
+    background: #6200ea;         /* أرجواني داكن للإجمالي */
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin: 0 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#total::before {
+    content: 'Total: ';
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #6200ea;         /* أخضر فاتح على رمادي */
+    color: #fff;              /* نصوص داكنة */
+    border-radius: 20px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+button:hover {
+    background: #390677;         /* أخضر داكن عند التمرير */
+    letter-spacing: 1px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+
+}
+.btnsearch button{
+    width: 45%;
+    margin: 10px 0 0 0;
+
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+#deleteall{
+    margin: 15px 0;
+}
+
+.form-container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bb86fc;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.form-container input::placeholder {
+    color: #aaa;
+}
+
+.form-container button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bb86fc;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #9a67ea;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-container a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+.form-container button {
+    padding: 12px;
+    height: auto; /* خلي الطول يتحدد تلقائي مع البادينج */
+    line-height: 1.5; /* يحسن وضعية النص داخل الزرار */
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #aaa;
+}
+.remember-me input[type="checkbox"] {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #bb86fc;
+    background-color: #1e1e1e;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.remember-me input[type="checkbox"]:checked {
+    background-color: #bb86fc;
+}
+
+.remember-me input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid #121212;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.remember-me input[type="checkbox"]:checked::after {
+    opacity: 1;
+}
+
+.remember-me label {
+    cursor: pointer;
+    user-select: none;
+}
+

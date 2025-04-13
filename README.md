@@ -99,6 +99,7 @@ product-management-system/
 ├── home.js                   # JavaScript for managing home page functionality
 └── README.md                 # Project documentation (this file)
 
+
 Contribution
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:

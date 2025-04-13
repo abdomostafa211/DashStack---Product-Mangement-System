@@ -88,16 +88,15 @@ How to Use
 
 File Structure
 
-product-management-system/
-│
-├── index.html                # Registration page HTML file
-├── login.html                # Login page HTML file
-├── login.js                  # JavaScript for handling login functionality
-├── register.js               # JavaScript for handling registration functionality
-├── home.html                 # Home page HTML file after login
-├── home.css                  # CSS specific to the home page
-├── home.js                   # JavaScript for managing home page functionality
-└── README.md                 # Project documentation (this file)
+- **Registration page** (`index.html`): Users can register an account by providing their username, email, and password.
+- **Login page** (`login.html`): Users can log in with their credentials.
+- **Home page** (`home.html`): After logging in, users are redirected to a home page where they can manage their products.
+- **JavaScript functionality**:
+  - `login.js`: Handles login logic and user authentication.
+  - `register.js`: Handles registration logic and stores user data.
+  - `home.js`: Manages product-related functionality after login.
+- **CSS** (`home.css`): Provides styling for the home page.
+
 
 
 Contribution
